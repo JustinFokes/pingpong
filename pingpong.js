@@ -1,5 +1,5 @@
 function divisibleByThree(inputOne){
-  if (inputOne /3){
+  if (inputOne %3 === 0){
     return ("ping");
   }
 };
