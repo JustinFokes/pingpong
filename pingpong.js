@@ -20,7 +20,8 @@ $(document).ready(function(){
     var inputOne = parseInt($("input#one").val());
 
     var pingPongOne = divisibleBy(inputOne)
-    for (inputOne; inputOne >= 1; inputOne -=1)
+
+    for (pingPongOne; pingPongOne >= 1; pingPongOne -=1)
     $("#result").append(pingPongOne);
 
     event.preventDefault();
