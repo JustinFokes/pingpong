@@ -2,7 +2,7 @@ function divisibleByThree(inputOne){
   if (inputOne %3){
     return ("ping");
   }
-}
+};
 
 
 $(document).ready(function(){
@@ -10,7 +10,7 @@ $(document).ready(function(){
     var inputOne = parseInt($("input#one").val());
 
     var pingPongOne = divisibleByThree(inputOne)
-    $("#result").text(inputOne);
+    $("#result").text(pingPongOne);
 
     event.preventDefault();
   });
