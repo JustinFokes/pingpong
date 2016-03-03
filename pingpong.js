@@ -9,6 +9,9 @@ function divisibleBy(inputOne){
   else if (inputOne %5 === 0){
     return ("pong");
   }
+  else{
+    return (inputOne)
+  }
 };
 
 
@@ -17,6 +20,7 @@ $(document).ready(function(){
     var inputOne = parseInt($("input#one").val());
 
     var pingPongOne = divisibleBy(inputOne)
+    for (inputOne; inputOne >= 1; inputOne -=1)
     $("#result").append(pingPongOne);
 
     event.preventDefault();
