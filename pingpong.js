@@ -14,7 +14,7 @@ function pingPongOne(){
       else{
         pingDing = i;
         }
-    $("#result").append('<p>' + pingDing + '</p>');
+    $("#result").append('<li>' + pingDing + '</li>');
   };
 }
 

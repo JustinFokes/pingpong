@@ -1,4 +1,8 @@
 #container{
-	padding-left: 30%;
-	padding-right: 30%;
+	padding-top: 45px;
+	padding-left: 40%;
+	
+}
+body{
+	background-color: orange;
 }
