@@ -3,7 +3,7 @@
 	padding-left: 70px;
 }
 #container2, #container3{
-	padding-top: 25px;
+	padding-top: 75px;
 	width: 500px;
  	height: 1000px;
   	margin-right: 10px;
@@ -14,9 +14,11 @@
 }
 #container3{
 	padding-left: 15px;
-	border-top: solid; 
-	border-left:solid;
+	
 }
 body{
 	background-color: salmon;
+}
+.jumbotron{
+	text-align: left;
 }
