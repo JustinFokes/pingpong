@@ -1,29 +1,26 @@
-function pingPongOne(){
-    var userInput = parseInt($("input#one").val());
-    var pingDing = '';
-    for (var i = 1; i <= userInput; i++){
+function pingPongOne(number){
+    for (var i = 1; i <= number; i++){
       if (i %15 === 0){
-        pingDing = 'pingpong';
+        return ('pingpong');
         }
-      else if (i %3 === 0 && userInput %15 !== 0){
-        pingDing = 'ping';
+      else if (i %3 === 0 && number %15 !== 0){
+        return('ping');
         }
       else if (i %5 === 0){
-        pingDing = 'pong';
+        return ('pong');
         }
       else{
-        pingDing = i;
-        }
-    $("#result").append('<li>' + pingDing + '</li>');
-
-  };
+        return(i);
+  //push to empty array
+    }
+  }
 }
 
 $(document).ready(function(){
   $("form#input-form").submit(function(event){
-  $("#result").empty();
-    pingPongOne();
-
+    var numberInput = $("input#one").val();
+    var pingDing = pingPongOne(numberInput);
+    $("#result").empty();
 
     event.preventDefault();
     });
